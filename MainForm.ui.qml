@@ -44,7 +44,6 @@ Item {
         height: 80
         color: "#bbd2e1"
         visible: true
-
         MouseArea {
             id: mouseArea00
             anchors.fill: parent
@@ -76,7 +75,7 @@ Item {
         MouseArea {
             id: mouseArea02
             anchors.fill: parent
-        }
+            }
     }
 
     Rectangle {
@@ -90,7 +89,7 @@ Item {
         MouseArea {
             id: mouseArea10
             anchors.fill: parent
-        }
+            }
     }
 
     Rectangle {
@@ -104,7 +103,7 @@ Item {
         MouseArea {
             id: mouseArea11
             anchors.fill: parent
-        }
+            }
     }
 
     Rectangle {
@@ -118,7 +117,7 @@ Item {
         MouseArea {
             id: mouseArea12
             anchors.fill: parent
-        }
+            }
     }
 
 
@@ -133,7 +132,7 @@ Item {
         MouseArea {
             id: mouseArea20
             anchors.fill: parent
-        }
+            }
     }
 
     Rectangle {
@@ -147,7 +146,7 @@ Item {
         MouseArea {
             id: mouseArea21
             anchors.fill: parent
-        }
+            }
     }
 
     Rectangle {
@@ -161,7 +160,7 @@ Item {
         MouseArea {
             id: mouseArea22
             anchors.fill: parent
-        }
+            }
     }
 
 

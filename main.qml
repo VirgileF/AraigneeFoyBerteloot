@@ -29,39 +29,39 @@ ApplicationWindow {
         id : page
 
         mouseArea00 {
-            onClicked: stateGroup.state = 'State00'
+            onClicked: page.rectangle00.color = "#ff0000"
         }
 
         mouseArea01 {
-            onClicked: stateGroup.state = 'State01'
+            onClicked: page.rectangle01.color = "#ff0000"
         }
 
         mouseArea02 {
-            onClicked: stateGroup.state = 'State02'
+            onClicked: page.rectangle02.color = vueObjetCpt.increment(0,2)
         }
 
         mouseArea10 {
-            onClicked: stateGroup.state = 'State10'
+            onClicked: page.rectangle10.color = "#ff0000"
         }
 
         mouseArea11 {
-            onClicked: stateGroup.state = 'State11'
+            onClicked: page.rectangle11.color = "#ff0000"
         }
 
         mouseArea12 {
-            onClicked: stateGroup.state = 'State12'
+            onClicked: page.rectangle12.color = "#ff0000"
         }
 
         mouseArea20 {
-            onClicked: stateGroup.state = 'State20'
+            onClicked: page.rectangle20.color = "#ff0000"
         }
 
         mouseArea21 {
-            onClicked: stateGroup.state = 'State21'
+            onClicked: page.rectangle21.color = "#ff0000"
         }
 
         mouseArea22 {
-            onClicked: stateGroup.state = 'State22'
+            onClicked: page.rectangle22.color = "#ff0000"
         }
 
     }
@@ -77,81 +77,5 @@ ApplicationWindow {
         }
     }
 
-    StateGroup {
-                id: stateGroup
-                states: [
-                    State {
-                        name: "State00"
 
-                        PropertyChanges {
-                            target: page.rectangle00
-                            color: "#00ff00"
-                        }
-                    },
-                    State {
-                        name: "State01"
-
-                        PropertyChanges {
-                            target: page.rectangle01
-                            color: "#00ff00"
-                        }
-                    },
-                    State {
-                        name: "State02"
-
-                        PropertyChanges {
-                            target: page.rectangle02
-                            color: "#00ff00"
-                        }
-                    },
-                    State {
-                        name: "State10"
-
-                        PropertyChanges {
-                            target: page.rectangle10
-                            color: "#00ff00"
-                        }
-                    },
-                    State {
-                        name: "State11"
-
-                        PropertyChanges {
-                            target: page.rectangle11
-                            color: "#00ff00"
-                        }
-                    },
-                    State {
-                        name: "State12"
-
-                        PropertyChanges {
-                            target: page.rectangle12
-                            color: "#00ff00"
-                        }
-                    },
-                    State {
-                        name: "State20"
-
-                        PropertyChanges {
-                            target: page.rectangle20
-                            color: "#00ff00"
-                        }
-                    },
-                    State {
-                        name: "State21"
-
-                        PropertyChanges {
-                            target: page.rectangle21
-                            color: "#00ff00"
-                        }
-                    },
-                    State {
-                        name: "State22"
-
-                        PropertyChanges {
-                            target: page.rectangle22
-                            color: "#00ff00"
-                        }
-                    }
-                ]
-    }
 }
