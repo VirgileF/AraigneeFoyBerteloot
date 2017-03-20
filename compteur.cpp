@@ -1,8 +1,9 @@
 #include "compteur.h"
 
+
 Compteur::Compteur(QObject *parent) : QObject(parent)
 {
-    fCompteur=0;
+    fCompteur=1;
     cptChanged();
 }
 
@@ -12,7 +13,6 @@ QString Compteur::readCompteur()
 }
 
 QString Compteur::increment(int x,int y) {
-    fCompteur++;
     QString couleur;
     if (fCompteur % 2 == 1) {
         tableau[x][y] = 1;
@@ -22,6 +22,7 @@ QString Compteur::increment(int x,int y) {
         tableau[x][y] = 2;
         couleur = "#ff0000";
     }
+    fCompteur++;
     cptChanged();
     return couleur;
 }

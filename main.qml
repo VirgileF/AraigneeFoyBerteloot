@@ -29,11 +29,11 @@ ApplicationWindow {
         id : page
 
         mouseArea00 {
-            onClicked: page.rectangle00.color = "#ff0000"
+            onClicked: page.rectangle00.color = vueObjetCpt.increment(0,0)
         }
 
         mouseArea01 {
-            onClicked: page.rectangle01.color = "#ff0000"
+            onClicked: page.rectangle01.color = vueObjetCpt.increment(0,1)
         }
 
         mouseArea02 {
@@ -41,27 +41,27 @@ ApplicationWindow {
         }
 
         mouseArea10 {
-            onClicked: page.rectangle10.color = "#ff0000"
+            onClicked: page.rectangle10.color = vueObjetCpt.increment(1,0)
         }
 
         mouseArea11 {
-            onClicked: page.rectangle11.color = "#ff0000"
+            onClicked: page.rectangle11.color = vueObjetCpt.increment(1,1)
         }
 
         mouseArea12 {
-            onClicked: page.rectangle12.color = "#ff0000"
+            onClicked: page.rectangle12.color = vueObjetCpt.increment(1,2)
         }
 
         mouseArea20 {
-            onClicked: page.rectangle20.color = "#ff0000"
+            onClicked: page.rectangle20.color = vueObjetCpt.increment(2,0)
         }
 
         mouseArea21 {
-            onClicked: page.rectangle21.color = "#ff0000"
+            onClicked: page.rectangle21.color = vueObjetCpt.increment(2,1)
         }
 
         mouseArea22 {
-            onClicked: page.rectangle22.color = "#ff0000"
+            onClicked: page.rectangle22.color = vueObjetCpt.increment(2,2)
         }
 
     }
