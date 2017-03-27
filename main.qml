@@ -6,27 +6,26 @@ ApplicationWindow {
 
     visible: true
     width: 500
-    height: 500
+    height: 613
     title: qsTr("Jeu de l'araignée")
-
-    menuBar: MenuBar {
-        Menu {
-            title: qsTr("File")
-            MenuItem {
-                text: qsTr("&Open")
-                onTriggered: console.log("Open action triggered");
-            }
-            MenuItem {
-                text: qsTr("Exit")
-                onTriggered: Qt.quit();
-            }
-        }
-    }
 
     MainForm {
 
         anchors.fill: parent
         id : page
+        button2.onClicked: Qt.quit();
+        button1.onClicked: {
+            page.rectangle00.color = "#bbd2e1";
+            page.rectangle01.color = "#bbd2e1";
+            page.rectangle02.color = "#bbd2e1";
+            page.rectangle10.color = "#bbd2e1";
+            page.rectangle11.color = "#bbd2e1";
+            page.rectangle12.color = "#bbd2e1";
+            page.rectangle20.color = "#bbd2e1";
+            page.rectangle21.color = "#bbd2e1";
+            page.rectangle22.color = "#bbd2e1";
+            vueObjetCpt.init();
+        }
 
         mouseArea00 {
             onClicked: page.rectangle00.color = vueObjetCpt.increment(0,0)
@@ -63,19 +62,9 @@ ApplicationWindow {
         mouseArea22 {
             onClicked: page.rectangle22.color = vueObjetCpt.increment(2,2)
         }
-
     }
 
 
-    MessageDialog {
-        id: messageDialog
-        title: qsTr("May I have your attention, please?")
-
-        function show(caption) {
-            messageDialog.text = caption;
-            messageDialog.open();
-        }
-    }
 
 
 }

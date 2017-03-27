@@ -5,7 +5,9 @@ import QtQuick.Layouts 1.1
 Item {
     id: page
     width: 500
-    height: 500
+    height: 613
+    property alias button2: button2
+    property alias button1: button1
     property alias mouseArea00: mouseArea00
     property alias rectangle00: rectangle00
     property alias rectangle: rectangle
@@ -31,9 +33,22 @@ Item {
         x: 0
         y: 0
         width: 500
-        height: 500
+        height: 613
         color: "#9f9797"
         visible: true
+
+        Rectangle {
+            id: cadreinf
+            x: 169
+            y: 517
+            width: 204
+            height: 76
+            color: "#8d8d9b"
+            anchors.horizontalCenterOffset: 0
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 20
+        }
     }
 
     Rectangle {
@@ -75,7 +90,7 @@ Item {
         MouseArea {
             id: mouseArea02
             anchors.fill: parent
-            }
+        }
     }
 
     Rectangle {
@@ -88,8 +103,9 @@ Item {
         visible: true
         MouseArea {
             id: mouseArea10
+            scale: 1
             anchors.fill: parent
-            }
+        }
     }
 
     Rectangle {
@@ -103,7 +119,7 @@ Item {
         MouseArea {
             id: mouseArea11
             anchors.fill: parent
-            }
+        }
     }
 
     Rectangle {
@@ -117,7 +133,7 @@ Item {
         MouseArea {
             id: mouseArea12
             anchors.fill: parent
-            }
+        }
     }
 
 
@@ -132,7 +148,7 @@ Item {
         MouseArea {
             id: mouseArea20
             anchors.fill: parent
-            }
+        }
     }
 
     Rectangle {
@@ -146,7 +162,7 @@ Item {
         MouseArea {
             id: mouseArea21
             anchors.fill: parent
-            }
+        }
     }
 
     Rectangle {
@@ -160,7 +176,23 @@ Item {
         MouseArea {
             id: mouseArea22
             anchors.fill: parent
-            }
+        }
+    }
+
+    Button {
+        id: button1
+        x: 191
+        y: 525
+        width: 118
+        height: 23
+        text: qsTr("Nouvelle partie")
+    }
+
+    Button {
+        id: button2
+        x: 213
+        y: 562
+        text: qsTr("Quitter")
     }
 
 
